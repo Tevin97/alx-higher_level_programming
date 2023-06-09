@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-import sys
-
 if __name__ == "__main__":
+    import sys
+
     args = sys.argv[1:]
     result = 0
-    for i in args:
-        result += int(i)
+    for i in range(len(args)):
+        result += int(args[i])
     print(result)
