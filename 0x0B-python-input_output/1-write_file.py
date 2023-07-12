@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-Defines a file-writing function.
-"""
+"""Defines a file-writing function."""
+
 
 def write_file(filename="", text=""):
     """
@@ -16,14 +15,8 @@ def write_file(filename="", text=""):
 
     Raises:
         FileNotFoundError: If the specified file path is invalid.
-        PermissionError: If there are insufficient permissions to write to the file.
+        PermissionError: If are insufficient permissions to write on file.
     """
 
-    try:
-        with open(filename, "w", encoding="utf-8") as t:
+     with open(filename, "w", encoding="utf-8") as t:
             return t.write(text)
-
-    except FileNotFoundError:
-        print(f"File '{filename}' not found.")
-    except PermissionError:
-        print(f"You don't have permission to write to file '{filename}'.")
