@@ -5,7 +5,7 @@ const character = 'X';
 if (isNaN(num)) {
   console.log('Missing size');
 } else {
-    for (let i = 0; i < num; i++) {
-      console.log(character.repeat(num));
-    }
+  for (let i = 0; i < num; i++) {
+    console.log(character.repeat(num));
+  }
 }
